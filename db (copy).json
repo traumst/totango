@@ -1,23 +1,5 @@
 [
   {
-    "isbn": 1234567890,
-    "author": "Olga Litvak Lazar",
-    "title": "Impulse of Intention",
-    "description": "Just a sample book text text text text text text text text text text text text text text text text",
-    "genre": ["Mystery", "Satire"],
-    "published": 1581984000000,
-    "price": 5.99
-  },
-  {
-    "isbn": 1234567890123,
-    "author": "Alex Litvak",
-    "title": "To Infinity and Beyond",
-    "description": "Another book for test. Text text text text text text text text text text text text text text text text",
-    "genre": ["Action", "Sci-fi"],
-    "published": 1576540800000,
-    "price": 5.99
-  },
-  {
     "isbn": 791059227,
     "author": "Miguel de Cervantes",
     "title": "Don Quixote",

@@ -4,22 +4,16 @@
       "author": "Miguel de Cervantes",
       "title": "Don Quixote",
       "description": "The story follows the adventures of a noble named Alonso Quixano who reads so many chivalric romances that he loses his sanity and decides to set out to revive chivalry, undo wrongs, and bring justice to the world, under the name Don Quixote de la Mancha. He recruits a simple farmer, Sancho Panza, as his squire. Don Quixote, in the first part of the book, does not see the world for what it is and prefers to imagine that he is living out a knightly story.",
-      "genre": [
-         "Drama"
-      ],
+      "genre": ["Drama"],
       "published": "1605-01-01",
-      "price": 15.5
+      "price": 15.50
    },
    {
       "isbn": 9626345314,
       "author": "Homer",
       "title": "Odyssey",
       "description": "The Odyssey is one of two major ancient Greek epic poems attributed to Homer. It is, in part, a sequel to the Iliad, the other work ascribed to Homer. The Odyssey is fundamental to the modern Western canon; it is the second-oldest extant work of Western literature, while the Iliad is the oldest.",
-      "genre": [
-         "Action",
-         "Mystery",
-         "Drama"
-      ],
+      "genre": ["Action", "Mystery", "Drama"],
       "published": "790-01-01",
       "price": 19.99
    },
@@ -28,40 +22,17 @@
       "author": "Leo Tolstoy",
       "title": "War and Peace",
       "description": "The novel chronicles the history of the French invasion of Russia and the impact of the Napoleonic era on Tsarist society through the stories of five Russian aristocratic families. Portions of an earlier version, titled The Year 1805, were serialized in The Russian Messenger from 1865 to 1867. The novel was first published in its entirety in 1869.",
-      "genre": [
-         "Drama"
-      ],
+      "genre": ["Drama"],
       "published": "1869-01-01",
       "price": 12.99
    },
    {
-      "isbn": 1246512141,
-      "title": "alex",
-      "author": "alex",
-      "published": 1518129914748,
-      "price": 0,
-      "description": "",
-      "genre": []
-   },
-   {
-      "isbn": 53827572356,
-      "title": "Thus spoke Zerathustra",
-      "author": "Friedrieh Nitzshe",
-      "published": 1518566400000,
-      "price": 5.99,
-      "description": "Bla bla bla",
-      "genre": [
-         "Sci-fi",
-         "Comedy"
-      ]
-   },
-   {
-      "isbn": 980980985,
-      "title": "fkjdshfksjdh",
-      "author": "jhgfsjdhfgsdjf",
-      "published": 1518132539873,
-      "price": 0,
-      "description": "",
-      "genre": []
+      "isbn": 836955218,
+      "author": "Dante Alighieri",
+      "title": "The Divine Comedy",
+      "description": "Belonging in the immortal company of the great works of literature, Dante Alighieri's poetic masterpiece, The Divine Comedy, is a moving human drama, an unforgettable visionary journey through the infinite torment of Hell, up the arduous slopes of Purgatory, and on to the glorious realm of Paradise — the sphere of universal harmony and eternal salvation.",
+      "genre": [],
+      "published": "1321-02-01",
+      "price": 5.98
    }
 ]
