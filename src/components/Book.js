@@ -41,28 +41,30 @@ class Book extends Component {
 	render() {
 		return <div className="book">
 			<a onClick={this.toggleDetails}
-			   className={this.state.details ? "book-details-visible" : "book-details-invisible"}></a>
+			   className={this.state.details ? "book-details-visible" : "book-details-invisible"}>{null}</a>
 
 			<a onClick={this.toggleDetails}>
 			<div className="icon"><BookIcon /></div>
+			</a>
 			<div className="delete">
 				<a onClick={(e) => this.props.delete(e, this.props.info.isbn)} title="Delete this book">
 					<DeleteIcon />
 				</a>
 			</div>
-			<div className="main">
-				<span>{this.props.info.author}</span> - <span>{this.props.info.title}</span>
-			</div>
-			<div className="published">
-				Published in <span>{month[this.props.info.published.getMonth()]} {this.props.info.published.getFullYear()}</span>
-			</div>
-			<div className="genre">
-				Genre: {this.props.info.genre.map((genre, i, allGenre) => {
-				if (i < allGenre.length - 1)
-					return <span key={genre}>{genre}, </span>;
-				return <span key={genre}>{genre}</span>;
-			})}
-			</div>
+			<a onClick={this.toggleDetails}>
+				<div className="main">
+					<span>{this.props.info.author}</span> - <span>{this.props.info.title}</span>
+				</div>
+				<div className="published">
+					Published in <span>{month[this.props.info.published.getMonth()]} {this.props.info.published.getFullYear()}</span>
+				</div>
+				<div className="genre">
+					Genre: {this.props.info.genre.map((genre, i, allGenre) => {
+					if (i < allGenre.length - 1)
+						return <span key={genre}>{genre}, </span>;
+					return <span key={genre}>{genre}</span>;
+				})}
+				</div>
 			</a>
 			<a name="details" className="details" onClick={this.toggleDetails}>More Details</a>
 			{this.state.details ?

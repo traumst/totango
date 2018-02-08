@@ -98,7 +98,7 @@ class App extends Component {
       <div className="app">
 	      {/* Overlay background placeholder */}
 	      <a onClick={this.toggleAddBook}
-	       className={this.state.addBookPopup ? "add-book-visible" : "add-book-invisible"}></a>
+	       className={this.state.addBookPopup ? "add-book-visible" : "add-book-invisible"}>{null}</a>
 
 	      <a onClick={this.toggleAddBook}>
 		      <div className="add-book-button">

@@ -61,10 +61,20 @@ class AddBook extends Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		// Verify input
-		if (this.state.title && this.state.author && this.state.isbn) {
+		if (this.state.title &&
+		    this.state.author &&
+		    this.state.isbn) {
 			let currentState = this.state;
-			currentState.isbn = parseInt(currentState.isbn);
-			this.props.submit(currentState)
+			try{
+				if (this.state.isbn.length === 10 || this.state.isbn.length === 13){
+					currentState.isbn = parseInt(currentState.isbn, 10);
+					this.props.submit(currentState)
+				} else {
+					throw new Error('Invalid ISBN')
+				}
+			} catch (err) {
+				e.target['isbn'].style = 'background-color:red;';
+			}
 		} else {
 			if (!this.state.title) e.target['title'].style = 'background-color:red;';
 			if (!this.state.author) e.target['author'].style = 'background-color:red;';
@@ -105,7 +115,7 @@ class AddBook extends Component {
 						        onChange={this.handleChange} />
 					 </label>
 				 </p>
-				 <p className="genre">
+				 <div className="genre">
 					 <span>Genre:</span>
 					 <ul>
 						 {genres.map(genre => (
@@ -121,7 +131,7 @@ class AddBook extends Component {
 						  </li>
 						 ))}
 					 </ul>
-				 </p>
+				 </div>
 				 <p className="description">
 					 <label>
 						 <span>Description:</span>

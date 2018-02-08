@@ -13,9 +13,9 @@ Must have both `git` and `npm` installed
 Open terminal in a folder that you want to download this project to and run following commands to clone from git
 and install dependencies of the project
 ```
-git clone https://github.com/traumst/totango.git AlexLitvakTask
-cd AlexLitvakTask
-npm install
+git clone https://github.com/traumst/totango.git AlexLitvakTask \
+&& cd AlexLitvakTask \
+&& npm install
 ```
 
 ## Runnnig the app locally
