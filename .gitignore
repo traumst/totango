@@ -21,7 +21,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # css files are generated from scss
-src/**/*.css
+App.css
 
 # app's log files
 access.log
