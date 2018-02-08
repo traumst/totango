@@ -1,0 +1,56 @@
+[
+  {
+    "isbn": 1234567890,
+    "author": "Olga Litvak Lazar",
+    "title": "Impulse of Intention",
+    "description": "Just a sample book text text text text text text text text text text text text text text text text",
+    "genre": ["Mystery", "Satire"],
+    "published": 1581984000000,
+    "price": 5.99
+  },
+  {
+    "isbn": 1234567890123,
+    "author": "Alex Litvak",
+    "title": "To Infinity and Beyond",
+    "description": "Another book for test. Text text text text text text text text text text text text text text text text",
+    "genre": ["Action", "Sci-fi"],
+    "published": 1576540800000,
+    "price": 5.99
+  },
+  {
+    "isbn": 791059227,
+    "author": "Miguel de Cervantes",
+    "title": "Don Quixote",
+    "description": "The story follows the adventures of a noble named Alonso Quixano who reads so many chivalric romances that he loses his sanity and decides to set out to revive chivalry, undo wrongs, and bring justice to the world, under the name Don Quixote de la Mancha. He recruits a simple farmer, Sancho Panza, as his squire. Don Quixote, in the first part of the book, does not see the world for what it is and prefers to imagine that he is living out a knightly story.",
+    "genre": ["Drama"],
+    "published": "1605-01-01",
+    "price": 15.50
+  },
+  {
+    "isbn": 9626345314,
+    "author": "Homer",
+    "title": "Odyssey",
+    "description": "The Odyssey is one of two major ancient Greek epic poems attributed to Homer. It is, in part, a sequel to the Iliad, the other work ascribed to Homer. The Odyssey is fundamental to the modern Western canon; it is the second-oldest extant work of Western literature, while the Iliad is the oldest.",
+    "genre": ["Action", "Mystery", "Drama"],
+    "published": "790-01-01",
+    "price": 19.99
+  },
+  {
+    "isbn": 9780199232765,
+    "author": "Leo Tolstoy",
+    "title": "War and Peace",
+    "description": "The novel chronicles the history of the French invasion of Russia and the impact of the Napoleonic era on Tsarist society through the stories of five Russian aristocratic families. Portions of an earlier version, titled The Year 1805, were serialized in The Russian Messenger from 1865 to 1867. The novel was first published in its entirety in 1869.",
+    "genre": ["Drama"],
+    "published": "1869-01-01",
+    "price": 12.99
+  },
+  {
+    "isbn": 836955218,
+    "author": "Dante Alighieri",
+    "title": "The Divine Comedy",
+    "description": "Belonging in the immortal company of the great works of literature, Dante Alighieri's poetic masterpiece, The Divine Comedy, is a moving human drama, an unforgettable visionary journey through the infinite torment of Hell, up the arduous slopes of Purgatory, and on to the glorious realm of Paradise — the sphere of universal harmony and eternal salvation.",
+    "genre": [],
+    "published": "1321-02-01",
+    "price": 5.98
+  }
+]

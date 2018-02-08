@@ -1,0 +1,228 @@
+$list-width: 500px;
+
+$grey: lightgrey;
+$selectedColor: #0054ff;
+
+$default-border: $grey solid 1px;
+
+body {
+  font: 1em sans-serif;
+}
+
+.app {
+  text-align: left;
+  width: $list-width;
+  border: $default-border;
+  margin: 10px;
+  position: relative;
+
+  .add-book-button {
+    text-align: right;
+    margin: 10px 10px 5px;
+
+    span {
+      position: relative;
+      bottom: 2px;
+    }
+  }
+
+  .add-book-visible {
+    position: fixed;
+    top: -500px;
+    left: -500px;
+    width: 4000px;
+    height: 4000px;
+    background-color: grey;
+    opacity: 0.8;
+    z-index: 2;
+  }
+  .add-book-invisible {
+    visibility: hidden;
+    z-index: -1;
+  }
+}
+
+.add-book {
+  z-index: 3;
+  background-color: white;
+  border: $default-border;
+  position: fixed;
+  left: 50px;
+  margin: auto;
+  width: 404px;
+
+  h1 {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  fieldset {
+    width: 400px;
+    box-sizing: border-box;
+    border: $default-border;
+
+    p {
+      padding: 5px 0;
+      margin: 0;
+    }
+
+    .genre {
+      clear: both;
+
+      ul {
+        width: 70%;
+        border: $default-border;
+        text-align: center;
+        margin: auto;
+        padding: 5px 0;
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin: 1px 5px;
+
+          input {
+            display: none;
+          }
+        }
+
+        .selected {
+          font-weight: bolder;
+          color: $selectedColor;
+        }
+      }
+    }
+
+    .title, .author, .isbn, .description, .price, .published {
+      clear: both;
+
+      span {
+        display: inline-block;
+        text-align: left;
+        float: left;
+        width: fit-content;
+        //background-color: grey;
+      }
+
+      input, textarea {
+        box-sizing: border-box;
+        border: 1px solid $grey;
+        float: right;
+        width: max-content;
+      }
+
+      textarea {
+        vertical-align: top;
+        height: 6em;
+        width: 100%;
+        resize: vertical;
+      }
+    }
+  }
+
+  .buttons {
+    small {
+      margin-left: 20px;
+    }
+
+    input {
+      margin: 0 5px 5px;
+      font: 1em sans-serif;
+      box-sizing: border-box;
+      border: $default-border;
+      float: right;
+      width: max-content;
+    }
+  }
+}
+
+.book-list {
+  padding: 5px;
+}
+
+.book {
+  height: 80px;
+  border: $default-border;
+  padding: 5px;
+  margin-bottom: 5px;
+  position: relative;
+
+  .book-details-visible {
+    position: fixed;
+    top: -500px;
+    left: -500px;
+    width: 4000px;
+    height: 4000px;
+    background-color: grey;
+    opacity: 0.8;
+    z-index: 2;
+  }
+  .book-details-invisible {
+    visibility: hidden;
+    z-index: -1;
+  }
+
+  .icon {
+    font-size: 4em;
+    float: left;
+    margin: 0 16px 0 6px;
+  }
+
+  .delete {
+    font-size: 1.5em;
+    float: right;
+  }
+
+  .details {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-style: italic;
+  }
+
+  .main {
+    margin-top: 8px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .published {
+    margin-top: 4px;
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  .genre {
+    margin-top: 3px;
+
+    span {
+      font-style: italic;
+    }
+  }
+}
+
+.book-details {
+  padding: 10px 5px 5px 10px;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+
+  div {
+    padding-bottom: 5px;
+  }
+
+  div span:first-of-type {
+    font-weight: bold;
+  }
+
+  .close {
+    float: right;
+    font-size: 1.5em;
+  }
+
+  div {
+    margin: 2px;
+  }
+}
